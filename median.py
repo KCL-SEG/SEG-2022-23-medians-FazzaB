@@ -9,4 +9,17 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
+for (i =0; i<len(numbers); i++):
+    temp = numbers[i]
+    if (numbers[i] > numbers[i+1]):
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temp
+half = len(numbers)/2
+if (half is int):
+    middle1 = numbers[half-1]
+    middle2 = numbers[half]
+    median = (middle1 + middle2)/2
+else:
+    half = int(half)
+    median = numbers[half]        
 print(numbers)
