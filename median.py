@@ -9,7 +9,7 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-for (int i = 0; i<len(numbers); i++):
+for (i in range (0, len(numbers) - 1)):
     temp = numbers[i]
     if (numbers[i] > numbers[i+1]):
         numbers[i] = numbers[i+1]
