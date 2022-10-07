@@ -9,13 +9,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-i = 0
-for num in numbers:
+for (int i = 0; i<len(numbers); i++):
     temp = numbers[i]
     if (numbers[i] > numbers[i+1]):
         numbers[i] = numbers[i+1]
         numbers[i+1] = temp
-    i += 1
 half = len(numbers)/2
 if (half is int):
     middle1 = numbers[half-1]
